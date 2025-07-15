@@ -1,0 +1,13 @@
+.red{
+    background: red;
+    color: white;
+}
+.blue{
+    background: rgba(68, 10, 226, 0.753);
+    height: 300px;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

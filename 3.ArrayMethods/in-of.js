@@ -5,7 +5,7 @@ const posts = {
     lastName: 'Pathan'
 }
 
-for (const post in posts) //posts[post] podt is key
+for (const post in posts) //posts[post] post is key
 {
     if (Object.prototype.hasOwnProperty.call(posts, post)) {
         const element = posts[post];

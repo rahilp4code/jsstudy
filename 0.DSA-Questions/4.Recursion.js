@@ -15,3 +15,4 @@ let fibo = function (n) {
 }
 
 console.log(fibo(6))
+

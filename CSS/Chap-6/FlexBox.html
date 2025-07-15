@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: cornsilk;
+            height: 100vh;
+            align-items: center;
+            align-content: center;
+        }
+
+        .red {
+            height: 200px;
+            /* width: 300px; */
+            background-color: red;
+            color: white;
+            order: 4;
+            /* align-self: flex-end; */
+            flex-grow: 1;
+            /* flex-shrink: 5; */
+
+        }
+
+        .blue {
+            height: 200px;
+            /* width: 300px; */
+            background-color: blue;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .green {
+            height: 200px;
+            /* width: 300px; */
+            background-color: green;
+            color: white;
+            flex-grow: 1;
+        }
+
+        .yellow {
+            height: 200px;
+            /* width: 300px; */
+            background-color: yellow;
+            color: white;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="red">red</div>
+        <div class="blue">blue</div>
+        <div class="green">green</div>
+        <div class="yellow">yellow</div>
+    </div>
+</body>
+
+</html>

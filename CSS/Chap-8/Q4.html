@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set Q4</title>
+    <style>
+        .slider {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        @keyframes slide1 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(60vw);
+            }
+            
+        }
+        @keyframes slide2 {
+            0%{
+                transform: translate(0vw);
+            }
+            100%{
+                transform: translate(100vw);
+            }
+            
+        }
+
+        .img1 {
+            transform: translate(-30vw);
+            animation: slide1 1s 2s forwards;
+            
+        }
+        .img2 {
+            transform: translate(0vw);
+            animation: slide2 1s 1s forwards;
+        }
+        .img3{
+            transform: translate(30vw);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <img src="slide2.avif" class="img1" width="800px" height="531px">
+        <img src="slide1.avif" class="img2" width="800px" height="531px">
+        <img src="slide3.avif" class="img3" width="800px" height="531px">
+    </div>
+</body>
+
+</html>
