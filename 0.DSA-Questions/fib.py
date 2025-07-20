@@ -6,7 +6,20 @@ def twoSum( nums, target) :
             return [adict[rem],index]
         adict[val] = index
 
-a = [2,7,3,15]
-# a = [3,3]
-print(twoSum(a,9))
-# print(twoSum(a,6))
+def palindrome(string,length=''):
+    if len(string)<=0:
+        print(length,'hi')
+        return length + string
+    elif string[0] != string[-1]:
+        return length + string
+    else:
+        length = length + string
+        return palindrome(string[1:-1],length)
+a = {}
+string = 'bab'
+for i in range(len(string)):
+    print(string[:i])
+    s = palindrome(string[:i])
+    print(s)  
+
+

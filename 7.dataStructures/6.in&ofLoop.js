@@ -25,14 +25,23 @@ let numbs = [1, 2, 3, 4, 5, 6, 7]
 // }
 //for...of Loop , doesnt work on object its for arrays ans string
 
-// for (const numb of numbs) // numb is index
-// {
-//     console.log(numb)
 
-// }
 
-let fruits = 'apple'
+// for of loop 
 
-for (const element of fruits) {
-    console.log(element)
-}
+for (const numb of numbs.entries()) // numb is value[0] until [n]
+{
+    console.log(numb)
+
+};
+
+let fruits = ['apple', 'mango', 'guava', 'watermelon', 'melon']
+for (const item of fruits) {
+    console.log(item);
+
+};
+for (const [i, e] of fruits.entries()) {
+    console.log(`${i + 1}: ${e}`)
+};
+
+// loops

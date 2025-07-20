@@ -117,3 +117,22 @@ const CalcArrayAvg = function (arr) {
 };
 
 CalcArrayAvg(bill);
+
+const str = "abc";
+for (let i = 0; i < str.length; i++) {
+  val1 += str[i];                               // forward
+  val2 += str[str.length - 1 - i];              // reverse index manually
+  // console.log(val1);
+  // console.log(val2);
+
+  // if (val1 != val2) {
+
+  // }
+}
+
+for (let i = 0; i < str.length; i++) {
+  let val1 = str.slice(0, i + 1);                // forward
+  let val2 = str.slice(str.length - 1 - i);      // reversed logic
+  console.log(val1);
+  console.log(val2);
+}
