@@ -75,6 +75,7 @@ const john = {
 
 console.log(mark.calcBMI());
 console.log(john.calcBMI());
+console.log(mark, john)
 
 if (john.johnBMI > mark.markBMI) {
   console.log(

@@ -108,7 +108,7 @@ console.log('rahil P'.split(' '))
 // .join
 
 const [firstName, lastName] = 'Rahil P'.split(' ')
-
+console.log(firstName, lastName)
 const newName = ['Mr.', firstName, lastName].join(' ');
 console.log(newName)
 

@@ -3,7 +3,7 @@
 // let xyzxyz = false;
 // let abc = true;
 
-// if (abc) xyxyz = true;
+// if (abc) xyzxyz = true;
 // if (xyzxyz) console.log(`its true`);
 
 // let private = 213213;

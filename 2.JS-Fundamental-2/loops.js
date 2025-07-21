@@ -118,6 +118,9 @@ const CalcArrayAvg = function (arr) {
 
 CalcArrayAvg(bill);
 
+
+// forward and backword
+
 const str = "abc";
 for (let i = 0; i < str.length; i++) {
   val1 += str[i];                               // forward

@@ -36,3 +36,18 @@ const restaurant = {
 }
 
 console.log(restaurant)
+
+// Creating an key property with function parameters
+
+const bookings = []
+
+function bookingSeat(FlightNum, numPassengers, price) {
+    const booking = {
+        FlightNum,
+        numPassengers,
+        price,
+    }
+    console.log(booking);
+    bookings.push(booking);
+}
+bookingSeat(12345, 3, 5000)
