@@ -37,7 +37,7 @@ const restaurant = {
 console.log('rahil' || 2904)
 console.log('' || 2904)
 console.log(true || 0)
-console.log(undefined || null)
+console.log(undefined || null) // since both are not true and its .log it will return 2nd val
 console.log(undefined || null || 'hello' || 2 || true)
 
 // restaurant.guest = 29; // if the value here was 0 it will still log the 20 u already know why so yeah

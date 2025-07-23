@@ -143,6 +143,6 @@ console.log(...UniqueMI)
 
 //isDisjointFrom,super,sub
 
-console.log(italianFoods.isDisjointFrom(mexicanFoods))
-console.log(italianFoods.isSubsetOf(mexicanFoods))
-console.log(italianFoods.isSupersetOf(mexicanFoods))
+console.log(italianFoods.isDisjointFrom(mexicanFoods)) // totally diiferent
+console.log(italianFoods.isSubsetOf(mexicanFoods))  // A InsideOf B
+console.log(italianFoods.isSupersetOf(mexicanFoods)) // A contains B

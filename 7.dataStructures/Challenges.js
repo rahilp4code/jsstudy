@@ -126,7 +126,7 @@ const game = {
 // let [player1, player2] = game.players
 // // console.log(player1, player2)
 // let allPlayers = [...player1, ...player2]
-// console.log(allPlayers)
+// console.log(allPlayers)  
 // for (const [i, player] of game.scored.entries()) {
 //   console.log(`Goal ${i + 1}: ${player}`)
 // }

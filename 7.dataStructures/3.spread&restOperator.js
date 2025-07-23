@@ -55,12 +55,12 @@ const restaurant = {
 // let letters = [...str, '.S']
 // console.log(letters)
 // console.log(...str)
-// //console.log(`${...str} P`) not gonna work
+// console.log(`${...str} ,P`)//not gonna work
 
 // // adding multiple lines into function
 
 // // const ing = [
-// //     prompt(`Tell your prefered Ingredients, Ingredient 1?`),
+// //     prompt(`Tell your prefered Ingredients, Ingredient 1 ? `),
 // //     prompt(`Ingredient 2`),
 // //     prompt(`Ingrdient 3`),
 // // ];

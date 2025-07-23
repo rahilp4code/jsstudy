@@ -20,7 +20,7 @@ console.log(anime.lastIndexOf('e'))   //last occurance
 console.log(anime.indexOf('Piece'))
 console.log(anime.indexOf('piece'))   //Case sensitive will return -1
 
-// .slice()
+// 🌟⭐.slice()⭐🌟
 
 console.log(anime.slice(4))           //stars with 4th index "Piece"
 console.log(anime.slice(4, 7))        //Ends before 7th index "Pie"  ('pie' length is 7-3)
@@ -63,7 +63,7 @@ const finalEmail = loginEmail.toLowerCase().trim();
 console.log(email === finalEmail, email === trimEmail)
 
 
-// .replace
+// 🌟.replace
 
 const priceInr = '10cr'
 const price$ = priceInr.replace('cr', 'M$').replace('M', " Million")
@@ -100,15 +100,18 @@ checkBag('I have Some Knife and to sell')
 checkBag('I carry a GUn for protection')
 
 
-// .split()
+//⭐ .split()🌟
 
 console.log('Hi+How+Are+You?'.split('+')) // it will split up this string by + sign and store it in an array
 console.log('rahil P'.split(' '))
 
-// .join
+//Destructuring string
 
 const [firstName, lastName] = 'Rahil P'.split(' ')
 console.log(firstName, lastName)
+
+// .join
+
 const newName = ['Mr.', firstName, lastName].join(' ');
 console.log(newName)
 

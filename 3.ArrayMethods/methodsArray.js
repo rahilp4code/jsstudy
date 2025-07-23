@@ -44,6 +44,7 @@ console.log(Array.of("1", arr, 3, 4, 5, true));
 
 console.log(arr[-1]); // negative index isnt allowed but .at allows it
 console.log(arr.at(-10));
+console.log('Rahil'.at(-2)) // i
 
 const array1 = [5, 12, 8, 130, 44];
 
@@ -62,6 +63,7 @@ console.log(`An index of ${index} returns ${array1.at(index)}`);
 const array2 = ["a", "b", "c", "c"];
 const array3 = ["d", "e", "f"];
 const array4 = array2.concat(array3); // even duplicate is counted
+const array45 = [...array2, ...array3];
 
 console.log(array4);
 // Expected output: Array ["a", "b", "c", "c", "d", "e", "f"]
@@ -216,7 +218,7 @@ console.log(animals1) // changes arent made on og array
 //15] .reduce()
 
 const array11 = ["one", "two", "three"];
-console.log("array1:", array1);
+console.log("array1:", array11);
 // Expected output: "array1:" Array ["one", "two", "three"]
 
 const reversed = array11.reverse();
@@ -294,3 +296,11 @@ const array16 = [1, 30, 39, 29, 10, 13];
 
 console.log(array16.every(isBelow));
 // Expected output: true
+
+//23] .splice(strt,remove numbers, new n-elemets)
+
+const array17 = [1, 30, 39, 29, 10, 13];
+
+// console.log(array17.splice(1))  //only keeps 0 index and deletes all other/ meaning it deleted evrrything from 1 and updated theb array17
+console.log(array17.splice(-1)) // delets the last index and returns it and updates arr17 
+console.log(array17)

@@ -30,15 +30,15 @@ const restaurant = {
 
 
 const { name, openingHours, categories } = restaurant
-// console.log({ name, openingHours, categories })
+console.log({ name, openingHours, categories })
 
 const { name: restaurantName, openingHours: hours, categories: tags } = restaurant
-// console.log({ restaurantName, hours, tags }) //if log is inside {} if will log an object holding those value same goes for []
+console.log({ restaurantName, hours, tags }) //if log is inside {} if will log an object holding those value same goes for []
 
 //default values
 
 const { menu = [], starterMenu: starter } = restaurant
-// console.log(menu)
+console.log(menu)
 
 //mutating variables
 
