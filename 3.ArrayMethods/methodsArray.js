@@ -215,7 +215,7 @@ console.log(animals1.slice());
 
 console.log(animals1) // changes arent made on og array
 
-//15] .reduce()
+//15] .reverse()
 
 const array11 = ["one", "two", "three"];
 console.log("array1:", array11);
@@ -290,17 +290,43 @@ console.log(arr15.flat(Infinity));
 
 //22] .every(func)
 
-const isBelow = (currentValue) => currentValue < 40;
+const isBelow = cur => cur < 40;
 
 const array16 = [1, 30, 39, 29, 10, 13];
 
 console.log(array16.every(isBelow));
 // Expected output: true
 
-//23] .splice(strt,remove numbers, new n-elemets)
+//23] .some(func)
+
+console.log(array16.some(mov => mov > 35))
+console.log(array16.some(mov => mov > 40))
+
+//24] .splice(strt,remove numbers, new n-elemets)
 
 const array17 = [1, 30, 39, 29, 10, 13];
 
 // console.log(array17.splice(1))  //only keeps 0 index and deletes all other/ meaning it deleted evrrything from 1 and updated theb array17
 console.log(array17.splice(-1)) // delets the last index and returns it and updates arr17 
 console.log(array17)
+
+//25] .findLast && .findLastIndex
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+const lastWithsrawal = movements.findLast(mov => mov < 0);
+console.log(lastWithsrawal)
+
+//your latest large movement was X movement ago 
+const latestLargeMovementIndex = movements.findLastIndex(mov => Math.abs(mov) > 1500)
+console.log(`Your latest large movement was ${movements.length - latestLargeMovementIndex - 1} movement ago... `)
+
+//26] .flat &  flatMap (use them in finverse)
+
+// .flat
+// const allAccBalance = accounts.map(mov => mov.movements).flat().reduce((acc, val) => acc + val, 0)
+// console.log(allAccBalance) // using map and flat is pretty common operation
+
+// .flatMap (does the job of both .flat and .Map but flat here goes only 1 level deep)
+
+// const overalBalance = accounts.flatMap(mov => mov.movements)
+// console.log(overalBalance)
