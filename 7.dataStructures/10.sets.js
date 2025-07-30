@@ -48,11 +48,11 @@ console.log(orderSet.has('BREAD'))
 
 orderSet.add('garlic bread')
 orderSet.add('garlic bread')
-console.log('orderSet')
+console.log(orderSet)
 
 //  .Delete
 
-orderSet.delete('rissota')
+orderSet.delete('rissoto')
 console.log(orderSet)
 
 // Sets dont work with index

@@ -6,7 +6,7 @@
 
 // Data
 const account1 = {
-    owner: 'Jonas Schmedtmann',
+    owner: 'Rahil Pathan',
     movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
     interestRate: 1.2, // %
     pin: 1111,
@@ -45,7 +45,7 @@ const account2 = {
 
 
 const accounts = [account1, account2];
-const acc1 = accounts.find(acc => acc.owner === 'Jonas Schmedtmann').pin;
+// const acc1 = accounts.find(acc => acc.owner === 'Rahil Pathan').pin;
 // console.log(acc1)
 
 // Elements
@@ -183,7 +183,7 @@ const movementElements = function (acc, sort = false) {
 // movementElements(account1.movements);
 
 //158
-const user = 'Rahil Pathan'
+// const user = 'Rahil Pathan'
 
 const createUsername = function (accs) {
     accs.forEach(function (acc) {
@@ -191,7 +191,7 @@ const createUsername = function (accs) {
     }
     )
 }
-createUsername(accounts)
+console.log(createUsername(accounts))
 // console.log(accounts)
 
 const account = accounts.find(acc => acc.owner === 'Jessica Davis')

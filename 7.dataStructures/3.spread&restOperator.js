@@ -35,49 +35,49 @@ const restaurant = {
 //SPREAD OPERATOR
 
 
-// let arr = [2, 3, 4]
-// let newArr = [1, ...arr, [5]]
-// console.log(newArr) // logs array
-// console.log(...newArr) // logs individuals (shalllow copy)
+let arr = [2, 3, 4]
+let newArr = [1, ...arr, [5]]
+console.log(newArr) // logs array
+console.log(...newArr) // logs individuals (shalllow copy)
 
-// const newMenu = [...restaurant.mainMenu, 'poha'];
-// console.log(newMenu)
-// // console.log(restaurant)
+const newMenu = [...restaurant.mainMenu, 'poha'];
+console.log(newMenu)
+// console.log(restaurant)
 
-// //join 2 array
+//join 2 array
 
-// const wholeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu]
-// console.log(wholeMenu)
+const wholeMenu = [...restaurant.mainMenu, ...restaurant.starterMenu]
+console.log(wholeMenu)
 
-// //Iterables are array,strings,maps,sets. Not objects
+//Iterables are array,strings,maps,sets. Not objects
 
-// let str = 'Rahil'
-// let letters = [...str, '.S']
-// console.log(letters)
-// console.log(...str)
-// console.log(`${...str} ,P`)//not gonna work
+let str = 'Rahil'
+let letters = [...str, '.S']
+console.log(letters)
+console.log(...str)
+//console.log(`${...str} ,P`)//not gonna work
 
-// // adding multiple lines into function
+// adding multiple lines into function
 
-// // const ing = [
-// //     prompt(`Tell your prefered Ingredients, Ingredient 1 ? `),
-// //     prompt(`Ingredient 2`),
-// //     prompt(`Ingrdient 3`),
-// // ];
-// // console.log(ing);
+// const ing = [
+//     prompt(`Tell your prefered Ingredients, Ingredient 1 ? `),
+//     prompt(`Ingredient 2`),
+//     prompt(`Ingrdient 3`),
+// ];
+// console.log(ing);
 
-// //restaurant.orderPasta(ing[0], ing[1], ing[2]); // way 1
-// //restaurant.orderPasta(...ing) // way 2 better
+//restaurant.orderPasta(ing[0], ing[1], ing[2]); // way 1
+//restaurant.orderPasta(...ing) // way 2 better
 
-// //obj
+//obj
 
-// const newRestaurant = { ...restaurant, Founder: 'Rahil', FoundedIn: '2004' }
-// console.log(newRestaurant)
+const newRestaurant = { ...restaurant, Founder: 'Rahil', FoundedIn: '2004' }
+console.log(newRestaurant)
 
-// const restaurantCopy = { ...restaurant }
-// restaurantCopy.name = `Bro's Pizza`;
-// console.log(restaurant.name)
-// console.log(restaurantCopy.name)
+const restaurantCopy = { ...restaurant }
+restaurantCopy.name = `Bro's Pizza`;
+console.log(restaurant.name)
+console.log(restaurantCopy.name)
 
 
 
