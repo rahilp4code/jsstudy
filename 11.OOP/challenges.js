@@ -55,6 +55,7 @@ class iShowCar {
     }
     break() {
         console.log(`${this.CarName} going at ${this.Speed -= 5}km/h`)
+        return this
     }
     get speedUS() {
         return this.Speed /= 1.6
@@ -107,13 +108,7 @@ console.log(car2);
 car2.chargeBattery(90);
 car2.break();
 car2.accelrate(); // if there are two or more methods of same name in a prototype chain first occurance of same name method will be executed
-//here child class overwrited the acceleration function inherited by parent
-
-
-
-
-
-
+//here child class overwrited the acceleration function inherited by
 
 
 ///////////////////////////////////////
@@ -128,3 +123,32 @@ DATA CAR 1: 'Rivian' going at 120 km/h, with a charge of 23%
 
 GOOD LUCK 😀
 */
+
+class EVCl extends iShowCar {
+    #charge;
+
+    constructor(make, speed, charge) {
+        super(make, speed);
+        this.#charge = charge;
+    }
+
+
+    chargeBattery = function (chargeTo) {
+        this.#charge = chargeTo;
+        console.log(this)
+        return this
+    }
+    accelrate = function () {
+        this.Speed += 20;
+        this.#charge -= 1;
+        console.log(`${this.CarName} going at ${this.Speed} km/h, with a charge of ${this.#charge}%`)
+        console.log(this)
+        return this
+    }
+    getCharge() {
+        return console.log(this.#charge)
+    }
+}
+
+const finalCar = new EVCl('Rivian', 120, 23)
+finalCar.accelrate().break().chargeBattery(99).getCharge()
