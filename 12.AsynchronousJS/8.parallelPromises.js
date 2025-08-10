@@ -74,7 +74,7 @@ const get3Countries = async function (c1, c2, c3) {
 
 // but in above non them are dependent on each other then why run them them in dependently, so use Promise.all
 // problem with parallel running promises is that if one promise is rejected then the whole promises are rejected, so we say that promises.all short circuits when one pormise rejects
-//so thats thrpromise.all combinator, so its called the combinator function because it allows us to combine multiple promises
+//so thats the promise.all combinator, so its called the combinator function because it allows us to combine multiple promises
 
 // Promise.race
 (async function () {

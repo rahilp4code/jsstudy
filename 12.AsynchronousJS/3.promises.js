@@ -107,7 +107,7 @@ btn.addEventListener("click", () => {
   getResponse("India");
 
   // getResponse('Indiasasasa')
-  // in this error the main error is that arguement is not a cou try but fetch still fulfills it and moves on and the error caught is that cant finds svg of the arguement to fic it we manually put the error, this happens because the response is false but not rejected
+  // in this error the main error is that arguement is not a country but fetch still fulfills it and moves on and the error caught is that, cant finds svg of the arguement to fix it we manually put the error, this happens because the response is false but not rejected
   // to fix it we manually throw the error by checking the response property where if ok keyword is false we 'throw new Error' which is catched by '.catch'
 
   // onError(`Something Went Wrong 💥💥💥💥Try Again`)

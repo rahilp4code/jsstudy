@@ -79,7 +79,7 @@ const whereAmI = async function () {
     console.error(`💥${err}💥`);
     onError(`💥${err.message}💥`);
 
-    // solve the problrm on line 82 , we throw err manually to reject the promise
+    // solve the problrm on line 93 , we throw err manually to reject the promise
     throw err;
   }
 };
