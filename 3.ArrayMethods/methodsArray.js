@@ -44,7 +44,7 @@ console.log(Array.of("1", arr, 3, 4, 5, true));
 
 console.log(arr[-1]); // negative index isnt allowed but .at allows it
 console.log(arr.at(-10));
-console.log('Rahil'.at(-2)) // i
+console.log("Rahil".at(-2)); // i
 
 const array1 = [5, 12, 8, 130, 44];
 
@@ -167,10 +167,10 @@ console.log(array1);
 
 //11] delete
 
-delete array9[1]
+delete array9[1];
 console.log(array9);
-array9[1] = 2
-console.log(array9)
+array9[1] = 2;
+console.log(array9);
 
 //12] .sort()
 
@@ -187,9 +187,11 @@ console.log(array1);
 //13] .splice(start/position to add ,deleteCount, e1,e2,e3)
 
 const monthsInYear = ["Jan", "March", "April", "June"];
-months.splice(1, 0, "Feb");
+monthsInYear.splice(0, 1);
+const h123213 = monthsInYear.splice(0, 1)[0];
 // Inserts at index 1
-console.log(months);
+console.log(monthsInYear);
+console.log(h123213);
 
 //14] .slice(start,end)
 
@@ -213,7 +215,7 @@ console.log(animals1.slice(2, -1));
 console.log(animals1.slice());
 // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
 
-console.log(animals1) // changes arent made on og array
+console.log(animals1); // changes arent made on og array
 
 //15] .reverse()
 
@@ -227,8 +229,8 @@ console.log("reversed:", reversed);
 
 //16] .includes()
 
-console.log(array11.includes('one'))
-console.log(array11.includes('sfsfs'))
+console.log(array11.includes("one"));
+console.log(array11.includes("sfsfs"));
 
 //17] .indexOf(vale,startFrom)
 
@@ -290,7 +292,7 @@ console.log(arr15.flat(Infinity));
 
 //22] .every(func)
 
-const isBelow = cur => cur < 40;
+const isBelow = (cur) => cur < 40;
 
 const array16 = [1, 30, 39, 29, 10, 13];
 
@@ -299,26 +301,32 @@ console.log(array16.every(isBelow));
 
 //23] .some(func)
 
-console.log(array16.some(mov => mov > 35))
-console.log(array16.some(mov => mov > 40))
+console.log(array16.some((mov) => mov > 35));
+console.log(array16.some((mov) => mov > 40));
 
 //24] .splice(strt,remove numbers, new n-elemets)
 
 const array17 = [1, 30, 39, 29, 10, 13];
 
 // console.log(array17.splice(1))  //only keeps 0 index and deletes all other/ meaning it deleted evrrything from 1 and updated theb array17
-console.log(array17.splice(-1)) // delets the last index and returns it and updates arr17 
-console.log(array17)
+console.log(array17.splice(-1)); // delets the last index and returns it and updates arr17
+console.log(array17);
 
 //25] .findLast && .findLastIndex
 
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
-const lastWithsrawal = movements.findLast(mov => mov < 0);
-console.log(lastWithsrawal)
+const lastWithsrawal = movements.findLast((mov) => mov < 0);
+console.log(lastWithsrawal);
 
-//your latest large movement was X movement ago 
-const latestLargeMovementIndex = movements.findLastIndex(mov => Math.abs(mov) > 1500)
-console.log(`Your latest large movement was ${movements.length - latestLargeMovementIndex - 1} movement ago... `)
+//your latest large movement was X movement ago
+const latestLargeMovementIndex = movements.findLastIndex(
+  (mov) => Math.abs(mov) > 1500
+);
+console.log(
+  `Your latest large movement was ${
+    movements.length - latestLargeMovementIndex - 1
+  } movement ago... `
+);
 
 //26] .flat &  flatMap (use them in finverse)
 
