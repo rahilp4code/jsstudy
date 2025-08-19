@@ -1,3 +1,5 @@
+# This is my mentor's python file in which he explained 
+
 def twoSum( nums, target) :
     adict = { }
     for index,val in enumerate(nums):
