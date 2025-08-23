@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice SET Q.4</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 110px auto;
+        justify-content: space-between;
+        background-color: cornsilk;
+      }
+      header {
+        background-color: black;
+        color: white;
+        height: 86px;
+      }
+      .icon {
+        width: 110px;
+        height: 86px;
+        background-image: url(oip.jpeg);
+        background-size: 100px 86px;
+        background-repeat: no-repeat;
+      }
+      li {
+        list-style: none;
+        display: inline;
+        padding-left: 40px;
+      }
+
+      ul {
+        padding: 30px;
+      }
+      .container1 {
+        width: 100vw;
+        height: 200px;
+        background-image: url(oip-1.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100vw 200px;
+      }
+      .container2 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        margin: 10px;
+      }
+      .red {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .green {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+      .blue {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="icon"></div>
+      <div class="nav">
+        <header>
+          <nav>
+            <ul>
+              <li>HOME</li>
+              <li>CONTACT</li>
+              <li>ABOUT</li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div class="container1"></div>
+    <div class="container2">
+      <div class="red"></div>
+      <div class="green"></div>
+      <div class="blue"></div>
+    </div>
+  </body>
+</html>
